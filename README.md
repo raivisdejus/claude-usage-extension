@@ -6,13 +6,19 @@ A GNOME Shell extension that displays your Claude Code API usage percentage in t
 ## Features                                                                                                                                                                                                      
                                                                                                                                                                                                                    
 - **Real-time usage monitoring** - View your 5-hour and 7-day Claude Code usage                                                                                                                                  
-- **Multiple display modes** - Show usage as text, progress bar, or both                                                                                                                                         
-- **Color-coded indicators** - Progress bars change color based on usage level                                                                                                                                   
-- **Reset timers** - See when your usage limits will reset                                                                                                                                                       
-- **Configurable refresh interval** - Set how often to fetch usage data (10-600 seconds)                                                                                                                         
-- **Optional icon** - Show or hide the Claude icon in the panel                                                                                                                                                  
+- **Settings menu*** - Change the layout or the refresh time                                                                                                                                              
                                                                                                                                                                                                             
 ## Requirements                                                                                                                                                                                                  
                                                                                                                                                                                                                    
 - GNOME Shell 48 or later                                                                                                                                                                                        
-- Claude Code CLI installed and authenticated (`~/.claude/.credentials.json`)   
+- Claude Code installed and authenticated (`~/.claude/.credentials.json`)   
+
+## Installation                                                                                                                                                                                                  
+
+```bash
+git clone https://github.com/Haletran/claude-usage-extension
+cp -r claude-code-usage ~/.local/share/gnome-shell/extensions/claude-usage@anthropic.com 
+cd ~/.local/share/gnome-shell/extensions/claude-usage@anthropic.com/schemas                                                                                                                                      
+glib-compile-schemas .
+## Restart Gnome Shell with Alt + F2 type r or logout
+```
