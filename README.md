@@ -21,4 +21,5 @@ cp -r claude-code-usage ~/.local/share/gnome-shell/extensions/claude-usage@halet
 cd ~/.local/share/gnome-shell/extensions/claude-usage@haletran.com/schemas                                                                                                                                      
 glib-compile-schemas .
 ## Restart Gnome Shell with Alt + F2 type r or logout
+## Then enable the extension
 ```
