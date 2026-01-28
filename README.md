@@ -17,7 +17,7 @@ A GNOME Shell extension that displays your Claude Code API usage percentage in t
 
 ```bash
 git clone https://github.com/Haletran/claude-usage-extension
-cp -r claude-code-usage ~/.local/share/gnome-shell/extensions/claude-usage@anthropic.com 
+cp -r claude-code-usage ~/.local/share/gnome-shell/extensions/claude-usage@haletran.com 
 cd ~/.local/share/gnome-shell/extensions/claude-usage@anthropic.com/schemas                                                                                                                                      
 glib-compile-schemas .
 ## Restart Gnome Shell with Alt + F2 type r or logout
