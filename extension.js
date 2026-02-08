@@ -232,9 +232,10 @@ class ClaudeUsageIndicator extends PanelMenu.Button {
     }
 
     _refreshUsage() {
+        const configDir = GLib.getenv('CLAUDE_CONFIG_DIR') ??
+            GLib.build_filenamev([GLib.get_home_dir(), '.claude']);
         const credentialsPath = GLib.build_filenamev([
-            GLib.get_home_dir(),
-            '.claude',
+            configDir,
             '.credentials.json',
         ]);
 
